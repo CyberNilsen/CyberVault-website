@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberVault - Export/Import User Tutorial</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/CyberVaultLogo.ico">
+    <link rel="icon" type="image/x-icon" href="./images/CyberVaultLogo.ico">
     <style>
         :root {
             --dark-bg: #1a1a1a;
@@ -134,6 +134,79 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
+        .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transform: translateY(-3px);
+}
+
+        .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-bg-color);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    transition: var(--transition);
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: var(--transition);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .nav-link i {
+    margin-left: 5px;
+    transition: var(--transition);
+}
+
+.dropdown:hover .nav-link i {
+    transform: rotate(180deg);
+}
+
         @media (max-width: 768px) {
             .step-content {
                 flex-direction: column;
@@ -156,6 +229,30 @@
     </style>
 </head>
 <body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="CyberVault Logo">
+                <h1>CyberVault</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./Export_user_tutorial.html">  Export User Data</a>
+                        </div>
+                    </li>
+                    <li><a href="./download.html">Download</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div class="tutorial-container">
         <div class="tutorial-header">
             <h1>Export/Import User Tutorial</h1>
@@ -177,7 +274,7 @@
                         <strong>IMPORTANT!</strong>ㅤ NEVER SHARE THESE FILES WITH ANYONE EXCEPT YOURSELF!
                     </div>
                 </div>
-                <img src="images/export_step1.png" alt="Export user data" class="step-image">
+                <img src="./images/export_step1.png" alt="Export user data" class="step-image">
             </div>
         </div>
 
@@ -192,7 +289,7 @@
                 <div class="step-text">
                     <p class="step-description">Transfer the exported files to your other computer using your preferred method (USB drive, cloud storage, etc.).</p>
                 </div>
-                <img src="images/export_step2.png" alt="Transfer files" class="step-image">
+                <img src="./images/export_step2.png" alt="Transfer files" class="step-image">
             </div>
         </div>
 
@@ -207,7 +304,7 @@
                 <div class="step-text">
                     <p class="step-description">Go to your other PC and open the CyberVault application.</p>
                 </div>
-                <img src="images/export_step3.png" alt="Open CyberVault" class="step-image">
+                <img src="./images/export_step3.png" alt="Open CyberVault" class="step-image">
             </div>
         </div>
 
@@ -222,7 +319,7 @@
                 <div class="step-text">
                     <p class="step-description">On the login screen, click "Import a user" and select the exported files from your desktop.</p>
                 </div>
-                <img src="images/export_step4.png" alt="Import user" class="step-image">
+                <img src="./images/export_step4.png" alt="Import user" class="step-image">
             </div>
         </div>
 
@@ -237,10 +334,39 @@
                 <div class="step-text">
                     <p class="step-description">Login to your user account using your username and password. Your data will now be available on your new PC!</p>
                 </div>
-                <img src="images/export_step5.png" alt="Login to account" class="step-image">
+                <img src="./images/export_step5.png" alt="Login to account" class="step-image">
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="CyberVault Logo">
+                    <h3>CyberVault</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./Export_user_tutorial.html">Tutorials</a></li>
+                        <li><a href="./download.html">Download</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: cyberbrothershq@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://github.com/CyberHansen"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/CyberNilsen"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

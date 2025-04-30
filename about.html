@@ -6,7 +6,7 @@
     <title>About Us - CyberVault</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/CyberVaultLogo.ico">
+    <link rel="icon" type="image/x-icon" href="./images/CyberVaultLogo.ico">
     <style>
         .about-hero {
             background-color: var(--primary-color);
@@ -125,6 +125,55 @@
             color: var(--light-accent);
         }
 
+        .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-bg-color);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    transition: var(--transition);
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: var(--transition);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .nav-link i {
+    margin-left: 5px;
+    transition: var(--transition);
+}
+
+.dropdown:hover .nav-link i {
+    transform: rotate(180deg);
+}
+
         .social-links {
             display: flex;
             gap: 15px;
@@ -155,15 +204,20 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="CyberVault Logo">
+                <img src="./images/logo.png" alt="CyberVault Logo">
                 <h1>CyberVault</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="download.html">Download</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html" class="active">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./Export_user_tutorial.html">Export User Data</a>
+                        </div>
+                    </li>                    <li><a href="./download.html">Download</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -200,7 +254,7 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="images/team-cyberhansen.jpg" alt="CyberHansen">
+                        <img src="./images/team-cyberhansen.jpg" alt="CyberHansen">
                     </div>
                     <div class="member-info">
                         <h3>CyberHansen</h3>
@@ -213,7 +267,7 @@
                 </div>
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="images/team-cybernilsen.jpg" alt="CyberNilsen">
+                        <img src="./images/team-cybernilsen.jpg" alt="CyberNilsen">
                     </div>
                     <div class="member-info">
                         <h3>CyberNilsen</h3>
@@ -232,16 +286,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo.png" alt="CyberVault Logo">
+                    <img src="./images/logo.png" alt="CyberVault Logo">
                     <h3>CyberVault</h3>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="download.html">Download</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./download.html">Download</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -258,7 +312,7 @@
 
     
 
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get all download buttons
