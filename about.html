@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CyberVault</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/CyberVaultLogo.ico">
+    <style>
+        .about-hero {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .about-hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-section {
+            padding: 80px 0;
+            background-color: var(--section-background);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .about-content {
+            text-align: left;
+            background-color: var(--card-background);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--primary-color);
+        }
+        
+        .about-content h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        
+        .team-section {
+            padding: 80px 0;
+            background-color: var(--section-background);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .team-member {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            max-width: 280px;
+            margin: 0 auto;
+            border: 1px solid var(--primary-color);
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member-image {
+            height: 320px;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .member-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .member-info h3 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        
+        .member-info p {
+            color: var(--text-color);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .member-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .member-social a {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+        
+        .member-social a:hover {
+            color: var(--light-accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            transform: translateY(-3px);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="CyberVault Logo">
+                <h1>CyberVault</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h3>Our Story</h3>
+                    <p>CyberVault was born from a simple idea: password management should be secure, private, and easy to use. As cybersecurity enthusiasts, we noticed that many password managers store data in the cloud, creating potential vulnerabilities.</p>
+                    <p>We decided to create a solution that keeps your passwords where they belong - on your device, protected by high-end cryptography, and completely under your control.</p>
+                </div>
+                <div class="about-content">
+                    <h3>Our Mission</h3>
+                    <p>At CyberVault, our mission is to empower users to take control of their digital security through simple, effective tools that don't compromise on protection.</p>
+                    <p>We believe that strong security shouldn't be complicated. Like brewing the perfect cup of coffee, securing your passwords should be a straightforward process that yields reliable results every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coffee-quote">
+        <div class="container">
+            <blockquote>
+                "Good passwords are like good coffee: complex, strong, and not easily replicated."
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team-cyberhansen.jpg" alt="CyberHansen">
+                    </div>
+                    <div class="member-info">
+                        <h3>CyberHansen</h3>
+                        <p>Founder & Security Specialist  (student)</p>
+                        <div class="member-social">
+                            <a href="https://github.com/CyberHansen"><i class="fab fa-github"></i></a>
+                            <a href="mailto:Mathiashansen2007@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team-cybernilsen.jpg" alt="CyberNilsen">
+                    </div>
+                    <div class="member-info">
+                        <h3>CyberNilsen</h3>
+                        <p>Founder & Security Specialist   (student)</p>
+                        <div class="member-social">
+                            <a href="https://github.com/CyberNilsen"><i class="fab fa-github"></i></a>
+                            <a href="mailto:andreasnilsen07@hotmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CyberVault Logo">
+                    <h3>CyberVault</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: cyberbrothershq@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://github.com/CyberHansen"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/CyberNilsen"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all download buttons
+            const downloadButtons = document.querySelectorAll('.btn-primary, .btn-download');
+            
+            // Add event listeners to each button
+            downloadButtons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    // Add the animation class
+                    this.classList.add('confetti-animate');
+                    
+                    // Remove the class after animation completes
+                    setTimeout(() => {
+                        this.classList.remove('confetti-animate');
+                    }, 6000); // Set timeout slightly longer than animation duration
+                });
+            });
+        });
+    </script>
+</body>
+</html>

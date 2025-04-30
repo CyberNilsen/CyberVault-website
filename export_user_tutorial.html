@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberVault - Export/Import User Tutorial</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/CyberVaultLogo.ico">
+    <style>
+        :root {
+            --dark-bg: #1a1a1a;
+            --card-bg: #2a2a2a;
+            --accent-color: #ff6b6b;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tutorial-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tutorial-header {
+            text-align: center;
+            margin-bottom: 50px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .tutorial-header h1 {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .tutorial-header p {
+            font-size: 1.4rem;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tutorial-step {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .step-header {
+            display: flex;
+            margin-bottom: 30px;
+            position: relative;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            display: flex;
+            flex-direction: column;
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            font-weight: bold;
+            line-height: 1;
+            margin-right: 20px;
+            width: 60px;
+        }
+
+        .step-number span {
+            font-size: 3rem;
+        }
+
+        .step-title {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-top: 0;
+            flex: 1;
+        }
+
+        .step-content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-top: 20px;
+            padding-left: 80px;
+        }
+
+        .step-text {
+            flex: 1;
+        }
+
+        .step-description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .warning-box {
+            background-color: rgba(255, 0, 0, 0.1);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .warning-box i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .step-image {
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .step-content {
+                flex-direction: column;
+            }
+
+            .step-image {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .step-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .step-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tutorial-container">
+        <div class="tutorial-header">
+            <h1>Export/Import User Tutorial</h1>
+            <p>Learn how to safely transfer your CyberVault user data between devices</p>
+        </div>
+
+        <div class="tutorial-step">
+            <div class="step-header">
+                <div class="step-number">
+                    <span>1</span>
+                </div>
+                <div class="step-title">Export Your User Data</div>
+            </div>
+            <div class="step-content">
+                <div class="step-text">
+                    <p class="step-description">Export your user data to a location where you can easily find the files. In this tutorial, we'll use the desktop for simplicity.</p>
+                    <div class="warning-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>IMPORTANT!</strong>ㅤ NEVER SHARE THESE FILES WITH ANYONE EXCEPT YOURSELF!
+                    </div>
+                </div>
+                <img src="images/export_step1.png" alt="Export user data" class="step-image">
+            </div>
+        </div>
+
+        <div class="tutorial-step">
+            <div class="step-header">
+                <div class="step-number">
+                    <span>2</span>
+                </div>
+                <div class="step-title">Transfer Files to New PC</div>
+            </div>
+            <div class="step-content">
+                <div class="step-text">
+                    <p class="step-description">Transfer the exported files to your other computer using your preferred method (USB drive, cloud storage, etc.).</p>
+                </div>
+                <img src="images/export_step2.png" alt="Transfer files" class="step-image">
+            </div>
+        </div>
+
+        <div class="tutorial-step">
+            <div class="step-header">
+                <div class="step-number">
+                    <span>3</span>
+                </div>
+                <div class="step-title">Open CyberVault on New PC</div>
+            </div>
+            <div class="step-content">
+                <div class="step-text">
+                    <p class="step-description">Go to your other PC and open the CyberVault application.</p>
+                </div>
+                <img src="images/export_step3.png" alt="Open CyberVault" class="step-image">
+            </div>
+        </div>
+
+        <div class="tutorial-step">
+            <div class="step-header">
+                <div class="step-number">
+                    <span>4</span>
+                </div>
+                <div class="step-title">Import User Data</div>
+            </div>
+            <div class="step-content">
+                <div class="step-text">
+                    <p class="step-description">On the login screen, click "Import a user" and select the exported files from your desktop.</p>
+                </div>
+                <img src="images/export_step4.png" alt="Import user" class="step-image">
+            </div>
+        </div>
+
+        <div class="tutorial-step">
+            <div class="step-header">
+                <div class="step-number">
+                    <span>5</span>
+                </div>
+                <div class="step-title">Login to Your Account</div>
+            </div>
+            <div class="step-content">
+                <div class="step-text">
+                    <p class="step-description">Login to your user account using your username and password. Your data will now be available on your new PC!</p>
+                </div>
+                <img src="images/export_step5.png" alt="Login to account" class="step-image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add any interactive elements or animations here if needed
+        });
+    </script>
+</body>
+</html> 

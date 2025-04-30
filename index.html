@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberVault - Secure Password Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/CyberVaultLogo.ico">
+
+</head>
+<style>
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transform: translateY(-3px);
+}
+
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="CyberVault Logo">
+                <h1>CyberVault</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Secure Your Digital Life</h2>
+                <p class="tagline">Like a good cup of coffee, security should be strong and reliable.</p>
+                <div class="cta-buttons">
+                    <a href="download.html" class="btn btn-primary">Download Now<span></span></a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="CyberVault App Screenshot" style="padding-left: 20px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose CyberVault?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure Password Storage</h3>
+                    <p>Your passwords are encrypted using high-level cryptography, keeping them safe from prying eyes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Local Database</h3>
+                    <p>All your data stays on your device. No cloud storage means no remote vulnerabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>High-Level Cryptography</h3>
+                    <p>Industry-standard encryption algorithms protect your sensitive information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Built with C#</h3>
+                    <p>Developed using C# for efficient and secure password management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coffee-quote">
+        <div class="container">
+            <blockquote>
+                "Security is like coffee: best when it's strong, reliable, and keeps you protected all day long."
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How CyberVault Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Create Your Vault</h3>
+                        <p>Sign up for a free account and set up your master password - the only password you'll need to remember.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Store Your Credentials</h3>
+                        <p>Add your usernames, passwords, and other sensitive information to your secure vault.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-lock-open"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Access Anywhere</h3>
+                        <p>Retrieve your passwords whenever you need them, securely encrypted and protected.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Stay Protected</h3>
+                        <p>Generate strong, unique passwords for all your accounts and never worry about security breaches again.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-center">
+                <a href="download.html" class="btn btn-primary">Download Now<span></span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-brief">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About CyberVault</h2>
+                <p>CyberVault is developed by CyberHansen and CyberNilsen, two passionate cybersecurity enthusiasts committed to creating secure, user-friendly tools for everyday digital life.</p>
+                <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CyberVault Logo">
+                    <h3>CyberVault</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: cyberbrothershq@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://github.com/CyberHansen"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/CyberNilsen"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all download buttons
+            const downloadButtons = document.querySelectorAll('.btn-primary');
+            
+            // Add event listeners to each button
+            downloadButtons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    // Add the animation class
+                    this.classList.add('confetti-animate');
+                    
+                    // Remove the class after animation completes
+                    setTimeout(() => {
+                        this.classList.remove('confetti-animate');
+                    }, 6000); // Set timeout slightly longer than animation duration
+                });
+            });
+        });
+    </script>
+</body>
+</html>
