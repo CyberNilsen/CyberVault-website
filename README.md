@@ -27,14 +27,6 @@ Co-founder and chief developer of CyberVault.
 ### [CyberHansen](https://github.com/CyberHansen)
 Co-founder and lead security architect of CyberVault.
 
-## Special Thanks
-
-We extend our gratitude to our dedicated testing team who helped refine CyberVault:
-
-- [Matvey](https://github.com/JahBoiMat)
-- [Ådne](https://github.com/Adnelilleskare)
-- [Fredrik](https://github.com/JahnTeigen)
-
 ## Download CyberVault
 
 - [CyberVault Download](https://cybernilsen.github.io/CyberVault-website/download.html)
